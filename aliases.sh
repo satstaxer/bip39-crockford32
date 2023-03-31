@@ -40,6 +40,7 @@ function restore_it {
   echo "cp $1 encoded_encrypted_wallet.txt"
   cp $1 encoded_encrypted_wallet.txt
   python3 decode_file.py
+  rm encoded_encrypted_wallet.txt
   echo "\nDecrypt restored_encoded_wallet.txt.gpg"
   aes256_decrypt restored_encoded_wallet.txt.gpg > restored_encoded_wallet.txt
   python3 decode.py

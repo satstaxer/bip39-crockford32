@@ -5,7 +5,7 @@ BIP39 - https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 dict.txt is a copy of https://raw.githubusercontent.com/trezor/python-mnemonic/master/src/mnemonic/wordlist/english.txt
 
 Overview:
-These steps are executed using alias `wallet_it` as defined in alises.sh.
+These steps are executed using alias `wallet_it` as defined in aliases.sh.
 You can write down `encoded_encrypted_wallet.txt` to use it restore and retrieve you wallet.
 1. `python3 encode.py`
     1. Ask for pin (upto 31 digits)
