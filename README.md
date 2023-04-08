@@ -2,7 +2,7 @@
 
 BIP39 - https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki 
 
-dict.txt is a copy of https://raw.githubusercontent.com/trezor/python-mnemonic/master/src/mnemonic/wordlist/english.txt
+dict.txt is a copy of https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt
 
 ## Overview:
 These steps are executed using alias `wallet_it` as defined in aliases.sh.
