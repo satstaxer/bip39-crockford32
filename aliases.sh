@@ -7,6 +7,11 @@ function clear_unsafe_files {
   rm encoded_wallet.txt restored_encoded_wallet.txt 
 }
 
+function random_seed {
+  bin="";for i in `seq 1 256`; do bin=$bin$(($RANDOM%2)) ;done
+  echo "ibase=16;obase=2;"`echo $bin | shasum -a 256 -0 | cut -c1-2 | tr a-f A-F`""  | bc |xargs printf "$bin%08d"
+}
+
 function read_password {
   if [[ $ZSH == 0 ]]; then
     echo $(read -sp "Password: "; echo $REPLY)
