@@ -56,12 +56,13 @@ class Crockford:
     return self.index(Crockford.words, Crockford.wordsLen, i)
 
   def getCrockford(self, op):
+    num_char = 50
     iLen = len(op) // 5
     base32word = []
     for i in range(iLen):
       j = i*5
       base32word.append(self.crockfordIndex(int(op[j:j+5], 2)))
-      if i % 25 == 24:
+      if i % num_char == num_char - 1:
         base32word.append("\n")
 
     return ''.join(base32word)

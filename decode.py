@@ -11,7 +11,7 @@ skip = 5 + 5 - excess
 pinOpStr = opAll[skip:]
 pinLen = int(pinOpStr[0:5], 2)
 
-j = -4
+j = 1
 if pinLen > 0:
   for i in range(pinLen):
     j = (i * 4) + 5
